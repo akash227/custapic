@@ -9,6 +9,7 @@
   "author": "Akash g",
   "license": "ISC",
   "dependencies": {
+    "flickrapi": "^0.3.36",
     "hapi": "^11.1.4"
   }
 }
