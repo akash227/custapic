@@ -1,0 +1,14 @@
+{
+  "name": "custapic",
+  "version": "1.0.0",
+  "description": "Loads photos from tumblr and flicker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Akash g",
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "^11.1.4"
+  }
+}
