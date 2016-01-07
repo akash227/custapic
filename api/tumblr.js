@@ -6,7 +6,10 @@ var tumblr = new Tumblr.Tagged(oauth);
 
 //search
 
-tumblr.search('Choco',{limit:10},function(error,results){
+function search ( query, next){
+	
+	tumblr.search(query,{limit:10},function(error,results){
+		if(error) next(error,null);
 	var photosObject = {photosArray: []};
 	for(index in results){
 		var photos=results[index].photos;
@@ -16,8 +19,17 @@ tumblr.search('Choco',{limit:10},function(error,results){
 			//gives the url of photo
 			var url = photos[photo].original_size.url;
 			var pht = {title: title,source: source,url: url};
-			photosObject.photosArray.push(photo);
+			photosObject.photosArray.push(pht);
 		}
 	}
-	console.log(photosObject);
+	next(null, photosObject);
 });
+
+
+}
+
+// search('McDonald',function(err,res){
+// 	console.log(res);
+// });
+
+exports.search = search;
