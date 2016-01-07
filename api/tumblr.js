@@ -11,7 +11,8 @@ tumblr.search('Choco',{limit:10},function(error,results){
 	for(index in results){
 		var photos=results[index].photos;
 		for(photo in photos){
-			console.log(photos[photo]);
+			//gives the url of photo
+			console.log(photos[photo].original_size.url);
 		}
 	}
 });
