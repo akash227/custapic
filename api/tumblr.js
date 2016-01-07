@@ -7,5 +7,8 @@ var tumblr = new Tumblr.Tagged(oauth);
 //search
 
 tumblr.search('Choco',{limit:10},function(error,results){
-	console.log(results);
+	
+	for(index in results){
+		console.log(results[index].photos);
+	}
 });
