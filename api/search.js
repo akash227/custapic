@@ -14,8 +14,13 @@ function search(query,cb){
 			if(error){
 				next(error,null);
 			}
-			console.log(results);
-			next(null,results);	
+			//console.log(results);
+			var photos = results.photosArray;
+			for(index in photos){
+				var photo = photos[index];
+				photosObject.photosArray.push(photo);
+			}
+			next(null,photosObject.photosArray);	
 		});
 	};
 
@@ -24,7 +29,12 @@ function search(query,cb){
 			if(error){
 				next(error,null);
 			}
-			next(null,results);
+			var photos = results.photosArray;
+			for(index in photos){
+				var photo = photos[index];
+				photosObject.photosArray.push(photo);
+			}
+			next(null,photosObject.photosArray);
 		});
 	};
 
@@ -36,6 +46,8 @@ function search(query,cb){
 	});
 }
 
-search('Mclaren',function(error,results){
-	//console.log(results);
-});
+// search('Mclaren',function(error,results){
+// 	console.log(results);
+// });
+
+exports.search = search;
