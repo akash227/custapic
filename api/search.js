@@ -52,8 +52,8 @@ function search(query,cb){
 	});
 }
 
-search('Mclaren',function(error,results){
-	console.log(results);
-});
+// search('Mclaren',function(error,results){
+// 	console.log(results);
+// });
 
 exports.search = search;
