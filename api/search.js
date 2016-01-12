@@ -1,5 +1,6 @@
-var async = require('async');
-
+var parallel= require('async').parallel;
+var flatten = require('underscore').flatten;
+var shuffle = require('underscore').shuffle;
 var flickr = require('./flickr.js');
 
 var tumblr = require('./tumblr.js');
@@ -38,16 +39,21 @@ function search(query,cb){
 		});
 	};
 
-	async.parallel(stack,function(error,results){
+	parallel(stack,function(error,results){
 		if(error){
 			cb(error,null);
 		}
-		cb(null,results);
+		var photosArray = [];
+		for(key in results){
+			photosArray.push(results[key]);
+		}
+		photosArray = shuffle(flatten(photosArray));
+		cb(null,photosArray);
 	});
 }
 
-// search('Mclaren',function(error,results){
-// 	console.log(results);
-// });
+search('Mclaren',function(error,results){
+	console.log(results);
+});
 
 exports.search = search;
