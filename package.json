@@ -12,6 +12,7 @@
     "async": "^1.5.2",
     "flickrapi": "^0.3.36",
     "hapi": "^11.1.4",
-    "tumblr": "^0.4.1"
+    "tumblr": "^0.4.1",
+    "underscore": "^1.8.3"
   }
 }
