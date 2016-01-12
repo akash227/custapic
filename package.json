@@ -11,6 +11,8 @@
   "dependencies": {
     "async": "^1.5.2",
     "flickrapi": "^0.3.36",
+    "good": "^6.4.0",
+    "good-console": "^5.2.0",
     "hapi": "^11.1.4",
     "tumblr": "^0.4.1",
     "underscore": "^1.8.3"
