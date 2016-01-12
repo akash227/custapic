@@ -37,10 +37,10 @@ function search(query,next){
 
 }
 
-//exports.search = search;
+exports.search = search;
 
-search('beau',function(err,results){
-  console.log(results);
-});
+// search('beau',function(err,results){
+//   console.log(results);
+// });
 
 
