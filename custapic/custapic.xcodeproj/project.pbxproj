@@ -1,0 +1,833 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		381929661C456E8B00EC7574 /* Haneke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3819295F1C456E2200EC7574 /* Haneke.framework */; };
+		381929671C456E8B00EC7574 /* Haneke.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3819295F1C456E2200EC7574 /* Haneke.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3819296A1C456E8B00EC7574 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3819294A1C456E1600EC7574 /* Alamofire.framework */; };
+		3819296B1C456E8B00EC7574 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3819294A1C456E1600EC7574 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		381929781C4576D100EC7574 /* JsonSerializerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 381929751C4576C100EC7574 /* JsonSerializerSwift.framework */; };
+		381929791C4576D100EC7574 /* JsonSerializerSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 381929751C4576C100EC7574 /* JsonSerializerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		386C95461C493741005ABCB5 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C95451C493741005ABCB5 /* PhotoViewController.swift */; };
+		387287191C452745008AC805 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387287181C452745008AC805 /* AppDelegate.swift */; };
+		3872871B1C452745008AC805 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3872871A1C452745008AC805 /* ViewController.swift */; };
+		3872871E1C452745008AC805 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3872871C1C452745008AC805 /* Main.storyboard */; };
+		387287201C452745008AC805 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3872871F1C452745008AC805 /* Assets.xcassets */; };
+		387287231C452745008AC805 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 387287211C452745008AC805 /* LaunchScreen.storyboard */; };
+		3872872E1C452745008AC805 /* custapicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3872872D1C452745008AC805 /* custapicTests.swift */; };
+		387287391C452745008AC805 /* custapicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387287381C452745008AC805 /* custapicUITests.swift */; };
+		3872874D1C453EFE008AC805 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3872874C1C453EFE008AC805 /* PhotoCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		381929491C456E1600EC7574 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3819293F1C456E1600EC7574 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		3819294B1C456E1600EC7574 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3819293F1C456E1600EC7574 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		3819294D1C456E1600EC7574 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3819293F1C456E1600EC7574 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire OSX";
+		};
+		3819294F1C456E1600EC7574 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3819293F1C456E1600EC7574 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire OSX Tests";
+		};
+		381929511C456E1600EC7574 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3819293F1C456E1600EC7574 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		381929531C456E1600EC7574 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3819293F1C456E1600EC7574 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		381929551C456E1600EC7574 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3819293F1C456E1600EC7574 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+		3819295E1C456E2200EC7574 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 381929571C456E2200EC7574 /* Haneke.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A095C9561980418C00CD0F4C;
+			remoteInfo = "Haneke-iOS";
+		};
+		381929601C456E2200EC7574 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 381929571C456E2200EC7574 /* Haneke.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6393C5F71C3B229200EB1FD8;
+			remoteInfo = "Haneke-tvOS";
+		};
+		381929621C456E2200EC7574 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 381929571C456E2200EC7574 /* Haneke.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A095C9611980418C00CD0F4C;
+			remoteInfo = HanekeTests;
+		};
+		381929641C456E2200EC7574 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 381929571C456E2200EC7574 /* Haneke.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A0026E9A19C9BFBC004DE0C6;
+			remoteInfo = HanekeDemo;
+		};
+		381929681C456E8B00EC7574 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 381929571C456E2200EC7574 /* Haneke.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A095C9551980418C00CD0F4C;
+			remoteInfo = "Haneke-iOS";
+		};
+		3819296C1C456E8B00EC7574 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3819293F1C456E1600EC7574 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		381929741C4576C100EC7574 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3819296F1C4576C100EC7574 /* JsonSerializerSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CB371ED61BCD1D8A004D0E12;
+			remoteInfo = JsonSerializerSwift;
+		};
+		381929761C4576C100EC7574 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3819296F1C4576C100EC7574 /* JsonSerializerSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CB371EE01BCD1D8A004D0E12;
+			remoteInfo = JsonSerializerSwiftTests;
+		};
+		3819297A1C4576D100EC7574 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3819296F1C4576C100EC7574 /* JsonSerializerSwift.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = CB371ED51BCD1D8A004D0E12;
+			remoteInfo = JsonSerializerSwift;
+		};
+		3872872A1C452745008AC805 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3872870D1C452745008AC805 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 387287141C452745008AC805;
+			remoteInfo = custapic;
+		};
+		387287351C452745008AC805 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3872870D1C452745008AC805 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 387287141C452745008AC805;
+			remoteInfo = custapic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3819296E1C456E8B00EC7574 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				381929671C456E8B00EC7574 /* Haneke.framework in Embed Frameworks */,
+				3819296B1C456E8B00EC7574 /* Alamofire.framework in Embed Frameworks */,
+				381929791C4576D100EC7574 /* JsonSerializerSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3819293F1C456E1600EC7574 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "../../../../../Downloads/Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
+		381929571C456E2200EC7574 /* Haneke.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Haneke.xcodeproj; path = "../../../../../Downloads/HanekeSwift-master/Haneke.xcodeproj"; sourceTree = "<group>"; };
+		3819296F1C4576C100EC7574 /* JsonSerializerSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JsonSerializerSwift.xcodeproj; path = "../../../../../Downloads/JsonSerializerSwift-master/JsonSerializerSwift.xcodeproj"; sourceTree = "<group>"; };
+		386C95451C493741005ABCB5 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		387287151C452745008AC805 /* custapic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = custapic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		387287181C452745008AC805 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3872871A1C452745008AC805 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3872871D1C452745008AC805 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3872871F1C452745008AC805 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		387287221C452745008AC805 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		387287241C452745008AC805 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		387287291C452745008AC805 /* custapicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = custapicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3872872D1C452745008AC805 /* custapicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = custapicTests.swift; sourceTree = "<group>"; };
+		3872872F1C452745008AC805 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		387287341C452745008AC805 /* custapicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = custapicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		387287381C452745008AC805 /* custapicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = custapicUITests.swift; sourceTree = "<group>"; };
+		3872873A1C452745008AC805 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3872874C1C453EFE008AC805 /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		387287121C452745008AC805 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				381929661C456E8B00EC7574 /* Haneke.framework in Frameworks */,
+				3819296A1C456E8B00EC7574 /* Alamofire.framework in Frameworks */,
+				381929781C4576D100EC7574 /* JsonSerializerSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		387287261C452745008AC805 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		387287311C452745008AC805 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3819293E1C456E0B00EC7574 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3819296F1C4576C100EC7574 /* JsonSerializerSwift.xcodeproj */,
+				381929571C456E2200EC7574 /* Haneke.xcodeproj */,
+				3819293F1C456E1600EC7574 /* Alamofire.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		381929401C456E1600EC7574 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3819294A1C456E1600EC7574 /* Alamofire.framework */,
+				3819294C1C456E1600EC7574 /* Alamofire iOS Tests.xctest */,
+				3819294E1C456E1600EC7574 /* Alamofire.framework */,
+				381929501C456E1600EC7574 /* Alamofire OSX Tests.xctest */,
+				381929521C456E1600EC7574 /* Alamofire.framework */,
+				381929541C456E1600EC7574 /* Alamofire tvOS Tests.xctest */,
+				381929561C456E1600EC7574 /* Alamofire.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		381929581C456E2200EC7574 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3819295F1C456E2200EC7574 /* Haneke.framework */,
+				381929611C456E2200EC7574 /* Haneke.framework */,
+				381929631C456E2200EC7574 /* HanekeTests.xctest */,
+				381929651C456E2200EC7574 /* HanekeDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		381929701C4576C100EC7574 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				381929751C4576C100EC7574 /* JsonSerializerSwift.framework */,
+				381929771C4576C100EC7574 /* JsonSerializerSwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3872870C1C452745008AC805 = {
+			isa = PBXGroup;
+			children = (
+				387287171C452745008AC805 /* custapic */,
+				3872872C1C452745008AC805 /* custapicTests */,
+				387287371C452745008AC805 /* custapicUITests */,
+				387287161C452745008AC805 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		387287161C452745008AC805 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				387287151C452745008AC805 /* custapic.app */,
+				387287291C452745008AC805 /* custapicTests.xctest */,
+				387287341C452745008AC805 /* custapicUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		387287171C452745008AC805 /* custapic */ = {
+			isa = PBXGroup;
+			children = (
+				3819293E1C456E0B00EC7574 /* Frameworks */,
+				387287181C452745008AC805 /* AppDelegate.swift */,
+				3872871A1C452745008AC805 /* ViewController.swift */,
+				3872871C1C452745008AC805 /* Main.storyboard */,
+				3872871F1C452745008AC805 /* Assets.xcassets */,
+				387287211C452745008AC805 /* LaunchScreen.storyboard */,
+				387287241C452745008AC805 /* Info.plist */,
+				3872874C1C453EFE008AC805 /* PhotoCell.swift */,
+				386C95451C493741005ABCB5 /* PhotoViewController.swift */,
+			);
+			path = custapic;
+			sourceTree = "<group>";
+		};
+		3872872C1C452745008AC805 /* custapicTests */ = {
+			isa = PBXGroup;
+			children = (
+				3872872D1C452745008AC805 /* custapicTests.swift */,
+				3872872F1C452745008AC805 /* Info.plist */,
+			);
+			path = custapicTests;
+			sourceTree = "<group>";
+		};
+		387287371C452745008AC805 /* custapicUITests */ = {
+			isa = PBXGroup;
+			children = (
+				387287381C452745008AC805 /* custapicUITests.swift */,
+				3872873A1C452745008AC805 /* Info.plist */,
+			);
+			path = custapicUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		387287141C452745008AC805 /* custapic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3872873D1C452745008AC805 /* Build configuration list for PBXNativeTarget "custapic" */;
+			buildPhases = (
+				387287111C452745008AC805 /* Sources */,
+				387287121C452745008AC805 /* Frameworks */,
+				387287131C452745008AC805 /* Resources */,
+				3819296E1C456E8B00EC7574 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				381929691C456E8B00EC7574 /* PBXTargetDependency */,
+				3819296D1C456E8B00EC7574 /* PBXTargetDependency */,
+				3819297B1C4576D100EC7574 /* PBXTargetDependency */,
+			);
+			name = custapic;
+			productName = custapic;
+			productReference = 387287151C452745008AC805 /* custapic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		387287281C452745008AC805 /* custapicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 387287401C452745008AC805 /* Build configuration list for PBXNativeTarget "custapicTests" */;
+			buildPhases = (
+				387287251C452745008AC805 /* Sources */,
+				387287261C452745008AC805 /* Frameworks */,
+				387287271C452745008AC805 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3872872B1C452745008AC805 /* PBXTargetDependency */,
+			);
+			name = custapicTests;
+			productName = custapicTests;
+			productReference = 387287291C452745008AC805 /* custapicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		387287331C452745008AC805 /* custapicUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 387287431C452745008AC805 /* Build configuration list for PBXNativeTarget "custapicUITests" */;
+			buildPhases = (
+				387287301C452745008AC805 /* Sources */,
+				387287311C452745008AC805 /* Frameworks */,
+				387287321C452745008AC805 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				387287361C452745008AC805 /* PBXTargetDependency */,
+			);
+			name = custapicUITests;
+			productName = custapicUITests;
+			productReference = 387287341C452745008AC805 /* custapicUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3872870D1C452745008AC805 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = akash;
+				TargetAttributes = {
+					387287141C452745008AC805 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 33Z6WF2YH3;
+					};
+					387287281C452745008AC805 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 33Z6WF2YH3;
+						TestTargetID = 387287141C452745008AC805;
+					};
+					387287331C452745008AC805 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 33Z6WF2YH3;
+						TestTargetID = 387287141C452745008AC805;
+					};
+				};
+			};
+			buildConfigurationList = 387287101C452745008AC805 /* Build configuration list for PBXProject "custapic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3872870C1C452745008AC805;
+			productRefGroup = 387287161C452745008AC805 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 381929401C456E1600EC7574 /* Products */;
+					ProjectRef = 3819293F1C456E1600EC7574 /* Alamofire.xcodeproj */;
+				},
+				{
+					ProductGroup = 381929581C456E2200EC7574 /* Products */;
+					ProjectRef = 381929571C456E2200EC7574 /* Haneke.xcodeproj */;
+				},
+				{
+					ProductGroup = 381929701C4576C100EC7574 /* Products */;
+					ProjectRef = 3819296F1C4576C100EC7574 /* JsonSerializerSwift.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				387287141C452745008AC805 /* custapic */,
+				387287281C452745008AC805 /* custapicTests */,
+				387287331C452745008AC805 /* custapicUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3819294A1C456E1600EC7574 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 381929491C456E1600EC7574 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3819294C1C456E1600EC7574 /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = 3819294B1C456E1600EC7574 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3819294E1C456E1600EC7574 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 3819294D1C456E1600EC7574 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		381929501C456E1600EC7574 /* Alamofire OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire OSX Tests.xctest";
+			remoteRef = 3819294F1C456E1600EC7574 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		381929521C456E1600EC7574 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 381929511C456E1600EC7574 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		381929541C456E1600EC7574 /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = 381929531C456E1600EC7574 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		381929561C456E1600EC7574 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 381929551C456E1600EC7574 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3819295F1C456E2200EC7574 /* Haneke.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Haneke.framework;
+			remoteRef = 3819295E1C456E2200EC7574 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		381929611C456E2200EC7574 /* Haneke.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Haneke.framework;
+			remoteRef = 381929601C456E2200EC7574 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		381929631C456E2200EC7574 /* HanekeTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = HanekeTests.xctest;
+			remoteRef = 381929621C456E2200EC7574 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		381929651C456E2200EC7574 /* HanekeDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = HanekeDemo.app;
+			remoteRef = 381929641C456E2200EC7574 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		381929751C4576C100EC7574 /* JsonSerializerSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JsonSerializerSwift.framework;
+			remoteRef = 381929741C4576C100EC7574 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		381929771C4576C100EC7574 /* JsonSerializerSwiftTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = JsonSerializerSwiftTests.xctest;
+			remoteRef = 381929761C4576C100EC7574 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		387287131C452745008AC805 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				387287231C452745008AC805 /* LaunchScreen.storyboard in Resources */,
+				387287201C452745008AC805 /* Assets.xcassets in Resources */,
+				3872871E1C452745008AC805 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		387287271C452745008AC805 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		387287321C452745008AC805 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		387287111C452745008AC805 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3872871B1C452745008AC805 /* ViewController.swift in Sources */,
+				386C95461C493741005ABCB5 /* PhotoViewController.swift in Sources */,
+				3872874D1C453EFE008AC805 /* PhotoCell.swift in Sources */,
+				387287191C452745008AC805 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		387287251C452745008AC805 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3872872E1C452745008AC805 /* custapicTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		387287301C452745008AC805 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				387287391C452745008AC805 /* custapicUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		381929691C456E8B00EC7574 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Haneke-iOS";
+			targetProxy = 381929681C456E8B00EC7574 /* PBXContainerItemProxy */;
+		};
+		3819296D1C456E8B00EC7574 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = 3819296C1C456E8B00EC7574 /* PBXContainerItemProxy */;
+		};
+		3819297B1C4576D100EC7574 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JsonSerializerSwift;
+			targetProxy = 3819297A1C4576D100EC7574 /* PBXContainerItemProxy */;
+		};
+		3872872B1C452745008AC805 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 387287141C452745008AC805 /* custapic */;
+			targetProxy = 3872872A1C452745008AC805 /* PBXContainerItemProxy */;
+		};
+		387287361C452745008AC805 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 387287141C452745008AC805 /* custapic */;
+			targetProxy = 387287351C452745008AC805 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3872871C1C452745008AC805 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3872871D1C452745008AC805 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		387287211C452745008AC805 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				387287221C452745008AC805 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3872873B1C452745008AC805 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3872873C1C452745008AC805 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3872873E1C452745008AC805 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = custapic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsaka.custapic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3872873F1C452745008AC805 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = custapic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsaka.custapic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		387287411C452745008AC805 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = custapicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsaka.custapicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/custapic.app/custapic";
+			};
+			name = Debug;
+		};
+		387287421C452745008AC805 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = custapicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsaka.custapicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/custapic.app/custapic";
+			};
+			name = Release;
+		};
+		387287441C452745008AC805 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = custapicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsaka.custapicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = custapic;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		387287451C452745008AC805 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = custapicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsaka.custapicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = custapic;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		387287101C452745008AC805 /* Build configuration list for PBXProject "custapic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3872873B1C452745008AC805 /* Debug */,
+				3872873C1C452745008AC805 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3872873D1C452745008AC805 /* Build configuration list for PBXNativeTarget "custapic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3872873E1C452745008AC805 /* Debug */,
+				3872873F1C452745008AC805 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		387287401C452745008AC805 /* Build configuration list for PBXNativeTarget "custapicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				387287411C452745008AC805 /* Debug */,
+				387287421C452745008AC805 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		387287431C452745008AC805 /* Build configuration list for PBXNativeTarget "custapicUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				387287441C452745008AC805 /* Debug */,
+				387287451C452745008AC805 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3872870D1C452745008AC805 /* Project object */;
+}
